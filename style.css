@@ -57,9 +57,14 @@ body {
   color: #fff;
   font-weight: 500;
   top: -40px;
-  transform: translateX(-50%);
+  transform: translateX(-50%) scale(0);
   line-height: 55px;
   z-index: 2;
+  transition: 0.3s;
+  transform-origin: bottom;
+}
+.range .sliderValue span.show{
+    transform:translateX(-50%) scale(1);
 }
 .range .sliderValue span::after {
   content: "";
